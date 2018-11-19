@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+    * {
+  padding: 0;
+  margin: 0;
+}                                              
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+  
+  font-family: 'lato', serif;
+  /* padding: 0 5px; */
+  background: rgba(116, 156, 211, 1);
+}
+.header {
+    position: fixed;
+    height: 72px;
+    min-width: 375px;
+    z-index: 100;
+    background: rgba(116, 156, 211, 1);
+}
+
+.menu-background {
+  height: 56.3333px;
+    position: relative;
+    top: 16px;
+    left: 260px;
+}
+
+/* MENU */
+
+.burgerMenu {
+	position: fixed;
+  top: 0;
+	margin-top: 16px;
+    padding-top: 8px;
+
+	right: -250px;
+	background: rgba(116, 156, 211, 0.80);
+	width: 250px;
+	height: 315px;
+	transition: .8s;
+	z-index: 120;
+}
+
+
+
+.open {
+	right: 0;
+}
+
+main {
+  padding-top: 100px;
+  background: rgba(116, 156, 211, 1);
+}
+
+ul {
+	margin-top: -5px;
+	padding-left: 0px;
+}
+
+ul li {
+	list-style: none;
+	font-size: 1.3em;
+	font-family: lato, arial, helvetica;
+}
+
+ul li a {
+	padding: 15px 20px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: #3D6BB4;
+	transition: 0.25s;
+}
+
+.burgerMenuBotton {
+	position: fixed;
+	top: 12px;
+	right: 5px;
+	width: 55px;
+	height: 65px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	z-index: 110;
+}
+
+.burgerMenuBotton span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 32px;
+	transition: .3s;
+}
+
+.burgerMenuBotton span:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFFF;
+	transition: .3s;
+}
+
+.burgerMenuBotton span:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFFF;
+	transition: .3s;
+}
+
+.burgerMenuBotton.toggle span {
+	background: transparent
+}
+
+.burgerMenuBotton.toggle span:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.burgerMenuBotton.toggle span:after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+/* MENU SLUT */
+.row {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  width: 260px;
+  top: 16px;
+  left: 0px;
+  z-index: 110;
+  /* transform: rotate(90deg);
+  transform-origin: left top 0; */
+}
+
+.startLogo {
+  position: fixed;
+}
+
+.altLogo {
+  position: absolute;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: #1d1d1d;
+}
+
+.shadow {
+  /* -webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); */
+/* -moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); */
+box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.40);
+}

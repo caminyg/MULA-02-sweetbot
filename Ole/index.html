@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweetbot</title>
+	<link rel="stylesheet" href="/styles/style.css">
+	<script src="scripts/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img class="menu-background" src=".\images\logoAsset 7.png" alt="" >
+        <!-- <div class="menu-background"> -->
+        
+  
+    </div>
+    <!-- MENU START -->
+        <div class="burgerMenu shadow"><button	class="burgerMenuBotton">
+                <span></span>
+            </button>
+        
+            <ul>
+                <li><a href="#home">Forside</a></li>
+                <li><a href="#hjemmeside">Din hjemmeside</a></li>
+                <li><a href="#webshop">Din webshp</a></li>
+                <li><a href="#brand">Dit brand</a></li>
+                <li><a href="#vores">Vores Sweetbot</a></li>
+            </ul>
+            
+            
+        <a href="#hotbot"><div class="hotbot"></div></a>
+            
+    </div>
+    
+    
+    
+    
+    
+    <!-- MENU SLUT --> 
+    
+        <section id="home" class="row">
+            <img class="logo startLogo" src=".\images\logoAsset 4.png " alt="" >
+                
+                  <main>
+                    <h1 class="white">KAN VI HJÆLPE DIG MED ?</h1> 
+
+                  </main> 
+        </section>
+                <section id="webshop" class="row">
+                <img class="logo altLogo" src=".\images\logoAsset 5.png" alt="" >
+                <!-- <h1 class="logo white altLogo">BLA</h1>  -->
+                </section>
+
+                <section id="hjemmeside" class="row">
+                        <img class="logo altLogo" src=".\images\logoAsset 6.png" alt="" >
+                        <!-- <h1 class="logo white altLogo">DET VIRKER</h1>  -->
+                        </section>
+               
+               
+
+<script>function logoSwitch () {
+        $('.altLogo').each(function() {
+          $(this).css('top',
+            $('.startLogo').offset().top -  $(this).closest('.row').offset().top
+          );
+        });
+      };
+      
+      $(document).scroll(function() {logoSwitch();});
+      
+      logoSwitch();</script>
+</body>
+</html>
