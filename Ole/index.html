@@ -30,7 +30,8 @@
             })
             </script>-->
 <link rel="stylesheet" href="styles/style.css">
-</head>
+<!--<link rel="stylesheet" href="styles/call-me.css">
+--></head>
 <body>
 <div class="header"> <img class="menu-background" src="images/menubar.png" alt="Baggrund til menu" > 
   <!-- <div class="menu-background"> --> 
@@ -43,9 +44,8 @@
     <li><a class="burgerLink" href="#home">Forside</a></li>
     <li><a class="burgerLink" href="#hjemmeside">Din hjemmeside</a></li>
     <li><a class="burgerLink" href="#webshop">Din webshop</a></li>
+    <li><a class="burgerLink" href="#brand">Dit brand</a></li>
     <li><a class="burgerLink" href="#sikkerhed">Din sikkerhed</a></li>
-	      <li><a class="burgerLink" href="#brand">Dit brand</a></li>
-
     <li><a class="burgerLink" href="#vores">Vores Sweetbot</a></li>
   </ul>
   <a href="#hotbot">
@@ -58,20 +58,77 @@
   <div class="pageContainer">
     <h1 class="white">KAN VI HJÆLPE DIG MED ?</h1>
     <div class="innerHome">
-      <div class="homeProductLink orange shadow"> 
-		<h2>Din <br> hjemmeside</h2>
-	  <img src="images/ikon_hjemmeside.png" alt=""/> </div>
+      <div class="homeProductLink orange shadow"> <a class="productLink" href="#hjemmeside">
+        <h2>Din <br>
+          hjemmeside</h2>
+        <img src="images/ikon_hjemmeside.png" alt=""/></a> </div>
       <div class="homeProductLink green shadow">
-		<h2>Din <br> webshop</h2>
-	  </div>
+        <h2>Din <br>
+          webshop</h2>
+        <img src="images/ikon_webshop.png" alt=""/> </div>
       <div class="homeProductLink grey shadow">
-		<h2>Dit <br> brand</h2>
-	  </div>
+        <h2>Dit <br>
+          brand</h2>
+        <img src="images/ikon_brand.png" alt=""/> </div>
       <div class="homeProductLink black shadow">
-		  <h2>Din <br> sikkerhed</h2>
-	   </div>
-      <div class="homeNavLink blue shadow"> </div>
-      <div class="homeNavLink blue shadow"> </div>
+        <h2>Din <br>
+          sikkerhed</h2>
+        <img src="images/ikon_sikkerhed.png" alt=""/> </div>
+      <div class="overlay">
+        <div id="form_container">
+          
+          <form method="post" action="pages/subpage.html">
+            <div class="form_description">
+              <h2>Kontakt mig</h2>
+              <p>Send os dit navn, nummer og vi giver dig et kald.</p>
+            </div>
+
+                <label class="description" for="element_1">Navn </label>
+                <div>
+                  <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
+                </div>
+
+                <label class="description" for="element_2">Telefon </label>
+                <div>
+                  <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/>
+                </div>
+
+                <p>Vedrørende</p>
+			  
+			  <label class="formContainer">Min hjemmeside
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label>
+<label class="formContainer">Min webshop
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="formContainer">Mit brand
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="formContainer">Min sikkerhed
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+               
+              
+  
+            
+                
+                <input id="sendForm" class="button" type="submit" value="Submit" />
+				  
+				<input id="overlayOff" class="button" type="button" value="Annuler"/>
+ 
+          </form>
+        </div>
+      </div>
+      <div id="callMe" class="homeNavLink orange shadow"> <img src="images/ikon_opringning.png" alt=""/>
+        <h2>En opringning</h2>
+      </div>
+      <div class="homeNavLink blue shadow"> <a class="navLink" href="#hjemmeside"> <img src="images/ikon_sweetbot.png" alt=""/>
+        <h2>Vores sweetbot</h2>
+        </a> </div>
     </div>
   </div>
 </section>
@@ -84,8 +141,8 @@
         </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
       <div class="productBox orange shadow"> <a class="productText" href="#">
         <h3>Design</h3>
-		  <p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
-        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
       <div class="productBox green shadow"> <a class="productText" href="#">
         <h3></h3>
         </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
@@ -95,26 +152,26 @@
 <section id="webshop" class="page"> <img class="logo altLogo" src="images/logo_hotbot.png" alt="" >
   <div class="pageContainer">
     <h1 class="white">Hvad kan vi gøre for din foretning ?</h1>
-	<div class="innerProduct">
+    <div class="innerProduct">
       <div class="productBox green shadow"> <a class="productText" href="#">
         <h3>Hotbot</h3>
-		<p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
-        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
       <div class="productBox blue shadow"> <a class="productText" href="#">
         <h3>Katalog</h3>
-		<p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
-        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
       <div class="productBox orange shadow"> <a class="productText" href="#">
         <h3>Betalingsløsning</h3>
-		<p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
-        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
     </div>
   </div>
 </section>
 <section id="brand" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
   <div class="pageContainer">
     <h1 class="white">Hvad kan vi gøre for dit brand ?</h1>
-	<div class="innerProduct">
+    <div class="innerProduct">
       <div class="productBox orange shadow"> <a class="productText" href="#">
         <h3>Logo Design</h3>
         </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
@@ -127,10 +184,10 @@
     </div>
   </div>
 </section>
-	<section id="sikkerhed" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
+<section id="sikkerhed" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
   <div class="pageContainer">
     <h1 class="white">Hvad kan vi gøre for dit brand ?</h1>
-	<div class="innerProduct">
+    <div class="innerProduct">
       <div class="productBox blue shadow"> <a class="productText" href="#">
         <h3>Netværk</h3>
         </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
