@@ -1,68 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sweetbot</title>
-	<link rel="stylesheet" href="/styles/style.css">
-	<script src="scripts/script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sweetbot</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+<!--<script type="text/javascript">
+        $(document).ready(function(){
+            function logoSwitch () {
+                $('.altLogo').each(function() {
+                  $(this).css('top',
+                    $('.startLogo').offset().top -  $(this).closest('.page').offset().top
+                  );
+                });
+              };
+              
+              $(document).scroll(function() {logoSwitch();});
+              
+              logoSwitch();
+        
+            // MENU
+            
+                $(".burgerMenuBotton").click(function(){
+                    $(".burgerMenu").toggleClass("open");
+                    $(".burgerMenuBotton").toggleClass("toggle");
+                })
+            })
+            </script>-->
+<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="header">
-        <img class="menu-background" src=".\images\logoAsset 7.png" alt="" >
-        <!-- <div class="menu-background"> -->
-        
+<div class="header"> <img class="menu-background" src="images/menubar.png" alt="Baggrund til menu" > 
+  <!-- <div class="menu-background"> --> 
   
+</div>
+<!-- MENU START -->
+<nav class="burgerMenu shadow">
+  <button	class="burgerMenuBotton"> <span></span> </button>
+  <ul>
+    <li><a class="burgerLink" href="#home">Forside</a></li>
+    <li><a class="burgerLink" href="#hjemmeside">Din hjemmeside</a></li>
+    <li><a class="burgerLink" href="#webshop">Din webshop</a></li>
+    <li><a class="burgerLink" href="#brand">Dit brand</a></li>
+    <li><a class="burgerLink" href="#vores">Vores Sweetbot</a></li>
+  </ul>
+  <a href="#hotbot">
+  <div class="hotbot"></div>
+  </a> </nav>
+
+<!-- MENU SLUT -->
+
+<section id="home" class="page"> <a href="#home"><img class="logo startLogo" src="images/logo.png" alt="" ></a>
+  <div class="pageContainer">
+    <h1 class="white">KAN VI HJÆLPE DIG MED ?</h1>
+    <div class="innerHome">
+      <div class="homeProductLink orange shadow"> 
+		<h2>Din <br> hjemmeside</h2>
+	  <img src="images/ikon_hjemmeside.png" alt=""/> </div>
+      <div class="homeProductLink green shadow">
+		<h2>Din <br> webshop</h2>
+	  </div>
+      <div class="homeProductLink grey shadow">
+		<h2>Dit <br> brand</h2>
+	  </div>
+      <div class="homeProductLink black shadow">
+		  <h2>Din <br> sikkerhed</h2>
+	   </div>
+      <div class="homeNavLink blue shadow"> </div>
+      <div class="homeNavLink blue shadow"> </div>
     </div>
-    <!-- MENU START -->
-        <div class="burgerMenu shadow"><button	class="burgerMenuBotton">
-                <span></span>
-            </button>
-        
-            <ul>
-                <li><a href="#home">Forside</a></li>
-                <li><a href="#hjemmeside">Din hjemmeside</a></li>
-                <li><a href="#webshop">Din webshp</a></li>
-                <li><a href="#brand">Dit brand</a></li>
-                <li><a href="#vores">Vores Sweetbot</a></li>
-            </ul>
-            
-            
-        <a href="#hotbot"><div class="hotbot"></div></a>
-            
+  </div>
+</section>
+<section id="hjemmeside" class="page"> <a href="#home"><img class="logo altLogo" src="images/logo_hjemmeside.png" alt="" ></a>
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for din hjemmeside ?</h1>
+    <div class="innerProduct">
+      <div class="productBox blue shadow"> <a class="productText" href="#">
+        <h3></h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox orange shadow"> <a class="productText" href="#">
+        <h3>Design</h3>
+		  <p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox green shadow"> <a class="productText" href="#">
+        <h3></h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
     </div>
-    
-    
-    
-    
-    
-    <!-- MENU SLUT --> 
-    
-        <section id="home" class="row">
-            <img class="logo startLogo" src=".\images\logoAsset 4.png " alt="" >
-                
-                  <main>
-                    <h1 class="white">KAN VI HJÆLPE DIG MED ?</h1> 
-
-                  </main> 
-        </section>
-                <section id="webshop" class="row">
-                <img class="logo altLogo" src=".\images\logoAsset 5.png" alt="" >
-                <!-- <h1 class="logo white altLogo">BLA</h1>  -->
-                </section>
-
-                <section id="hjemmeside" class="row">
-                        <img class="logo altLogo" src=".\images\logoAsset 6.png" alt="" >
-                        <!-- <h1 class="logo white altLogo">DET VIRKER</h1>  -->
-                        </section>
-               
-               
-
+  </div>
+</section>
+<section id="webshop" class="page"> <img class="logo altLogo" src="images/logo_hotbot.png" alt="" >
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for din foretning ?</h1>
+	<div class="innerProduct">
+      <div class="productBox green shadow"> <a class="productText" href="#">
+        <h3>Hotbot</h3>
+		<p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox blue shadow"> <a class="productText" href="#">
+        <h3>Katalog</h3>
+		<p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox orange shadow"> <a class="productText" href="#">
+        <h3>Betalingsløsning</h3>
+		<p>Lorem ipsum dolor sit amet </p><span>consectetur</span>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
+<section id="brand" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for dit brand ?</h1>
+	<div class="innerProduct">
+      <div class="productBox orange shadow"> <a class="productText" href="#">
+        <h3>Logo Design</h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox green shadow"> <a class="productText" href="#">
+        <h3>Visuel Identitet</h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox blue shadow"> <a class="productText" href="#">
+        <h3>MARKEDSFØRING</h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
+	<section id="brand" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for dit brand ?</h1>
+	<div class="innerProduct">
+      <div class="productBox blue shadow"> <a class="productText" href="#">
+        <h3>Netværk</h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox orange shadow"> <a class="productText" href="#">
+        <h3>Data</h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="productBox green shadow"> <a class="productText" href="#">
+        <h3>Rådgivning</h3>
+        </a> <a class="productImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
 <script>function logoSwitch () {
         $('.altLogo').each(function() {
           $(this).css('top',
-            $('.startLogo').offset().top -  $(this).closest('.row').offset().top
+            $('.startLogo').offset().top -  $(this).closest('.page').offset().top
           );
         });
       };

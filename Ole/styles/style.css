@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&subset=latin-ext');
+
 @charset "utf-8";
 /* CSS Document */
 
-    * {
+/* * {
   padding: 0;
   margin: 0;
-}                                              
+}     */                                         
 
 html {
 	scroll-behavior: smooth;
@@ -12,32 +14,87 @@ html {
 }
 
 body {
-  
-  font-family: 'lato', serif;
-  /* padding: 0 5px; */
+  font-family: 'Lato', sans-serif;  /* padding: 0 5px; */
   background: rgba(116, 156, 211, 1);
+	  color: white;
+	padding: 0;
+  margin: 0;
 }
+/* DEFAULT */
+
+h1{
+	margin: 20px 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+h2{
+	margin: 20px 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+h3{
+	margin: 0;
+	text-align: left;
+	font-weight: 700;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+p{
+	margin: 8px	0;
+	text-align: left;
+	font-weight: 400;
+	font-size: 1em;
+/*	text-transform: uppercase;
+*/}
+
 .header {
     position: fixed;
-    height: 72px;
-    min-width: 375px;
+	padding: 4vw 0;
+/*    height: 97px;
+*/    min-width: 375px;
     z-index: 100;
     background: rgba(116, 156, 211, 1);
 }
 
 .menu-background {
-  height: 56.3333px;
+  height: 56px;
     position: relative;
-    top: 16px;
-    left: 260px;
+/*    top: 16px;
+*/    left: 260px;
 }
+
+.logo {
+height: 56px;
+	top: 4vw;
+  left: 0px;
+  z-index: 110;
+  /* transform: rotate(90deg);
+  transform-origin: left top 0; */
+}
+
+.startLogo {
+  position: fixed;
+}
+
+.altLogo {
+  position: absolute;
+}
+
+
 
 /* MENU */
 
 .burgerMenu {
 	position: fixed;
   top: 0;
-	margin-top: 16px;
+	margin-top: 4vw;
     padding-top: 8px;
 
 	right: -250px;
@@ -54,10 +111,7 @@ body {
 	right: 0;
 }
 
-main {
-  padding-top: 100px;
-  background: rgba(116, 156, 211, 1);
-}
+
 
 ul {
 	margin-top: -5px;
@@ -84,10 +138,10 @@ ul li a:hover {
 
 .burgerMenuBotton {
 	position: fixed;
-	top: 12px;
+	top: 3.5vw;
 	right: 5px;
 	width: 55px;
-	height: 65px;
+	height: 56px;
 	box-sizing: border-box;
 	cursor: pointer;
 	background: transparent;
@@ -143,40 +197,148 @@ ul li a:hover {
 }
 
 /* MENU SLUT */
-.row {
+.page {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
-.logo {
-  width: 260px;
-  top: 16px;
-  left: 0px;
-  z-index: 110;
-  /* transform: rotate(90deg);
-  transform-origin: left top 0; */
-}
-
-.startLogo {
-  position: fixed;
-}
-
-.altLogo {
-  position: absolute;
-}
-
-.white {
-  color: white;
-}
-
-.black {
-  color: #1d1d1d;
-}
 
 .shadow {
   /* -webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); */
 /* -moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); */
 box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.40);
+}
+
+/*  Content */
+
+/*.pageContainer {
+	width: 100%;
+	height: 100%;
+}*/
+
+.pageContainer {
+
+  padding-top: 68px;
+	margin: 0 4vw 4vw;
+	background: rgba(116, 156, 211, 0.5);
+}
+
+/* FLEX */
+
+/*.innerpageContainer {
+		 box-sizing: border-box;
+
+	width: 100%;
+	height: 76vh;
+	display: flex;
+	flex-wrap: wrap;
+		justify-content: space-between;
+	align-content: flex-start;
+
+}
+
+.productBox {
+	width: 44vw;
+	height: 44vw;
+	margin-bottom: 4vw
+	
+}
+
+
+*/
+
+/* GRID */
+
+.innerHome {
+/*		 box-sizing: border-box;
+
+	width: 100%;
+	min-height: 76vh;*/
+	display: grid;
+	grid-template-columns: 44vw 44vw;
+	grid-template-rows: 44vw 44vw 18vw 18vw auto;
+  	grid-gap: 4vw;
+	
+}
+
+.homeProductLink {
+	height: 44vw;
+	
+}
+
+.homeProductLink img {
+	display: block;
+	margin: auto;
+	height: 30%;
+	width: auto;
+	
+}
+
+.homeNavLink {
+	grid-column: 1 / span 2;
+	
+}
+
+.innerProduct {
+/*		 box-sizing: border-box;
+
+	width: 100%;
+	min-height: 76vh;*/
+	display: grid;
+	grid-template-columns: 44vw 44vw;
+	grid-template-rows: 40vw 40vw 40vw;
+  	grid-gap: 4vw;
+	
+}
+
+.productBox {
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+/*.productBox a {
+	padding: 4vw;
+	display: block;
+	width: 100%;
+	height: 40vw;
+}*/
+
+.productBox img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 46vw;
+	height: 40vw;
+}
+
+.productText {
+	padding: 4vw;
+	display: block;
+	/*width: 100%;*/
+	height: 40vw;
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
+}
+
+.blue {
+	background-color: rgba(61,107,180,1.00);
+}
+
+.green {
+	background-color: rgba(201,219,80,1.00);
+}
+
+.orange {
+	background-color: rgba(223,155,103,1.00);
+}
+
+.grey {
+	background-color: rgba(181,178,176,1.00);
+}
+
+.black {
+	background-color: rgba(42,16,0,1.00);
 }
