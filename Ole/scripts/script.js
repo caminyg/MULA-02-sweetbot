@@ -25,4 +25,18 @@ $(document).ready(function(){
                     $(".burgerMenuBotton").toggleClass("toggle");
 					
                 });
+	
+	            $("#callMe").click(function(){
+                    $(".overlay").addClass("on");
+                    
+                });
+    			
+				$("#overlayOff").click(function(){
+                    $(".overlay").removeClass("on");
+                    
+                });
+           
+	
+	
+	
             });
