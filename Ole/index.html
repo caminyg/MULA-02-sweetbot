@@ -31,7 +31,8 @@
             </script>-->
 <link rel="stylesheet" href="styles/style.css">
 <!--<link rel="stylesheet" href="styles/call-me.css">
---></head>
+-->
+</head>
 <body>
 <div class="header"> <img class="menu-background" src="images/menubar.png" alt="Baggrund til menu" > 
   <!-- <div class="menu-background"> --> 
@@ -46,7 +47,7 @@
     <li><a class="burgerLink" href="#webshop">Din webshop</a></li>
     <li><a class="burgerLink" href="#brand">Dit brand</a></li>
     <li><a class="burgerLink" href="#sikkerhed">Din sikkerhed</a></li>
-    <li><a class="burgerLink" href="#vores">Vores Sweetbot</a></li>
+    <li><a class="burgerLink" href="#sweetbot">Vores Sweetbot</a></li>
   </ul>
   <a href="#hotbot">
   <div class="hotbot"></div>
@@ -76,50 +77,35 @@
         <img src="images/ikon_sikkerhed.png" alt=""/> </div>
       <div class="overlay">
         <div id="form_container">
-          
           <form method="post" action="pages/subpage.html">
             <div class="form_description">
               <h2>Kontakt mig</h2>
-              <p>Send os dit navn, nummer og vi giver dig et kald.</p>
+              <p>Send os navn og nummer, <br>
+                Så giver dig et kald.</p>
             </div>
-
-                <label class="description" for="element_1">Navn </label>
-                <div>
-                  <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
-                </div>
-
-                <label class="description" for="element_2">Telefon </label>
-                <div>
-                  <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/>
-                </div>
-
-                <p>Vedrørende</p>
-			  
-			  <label class="formContainer">Min hjemmeside
-  <input type="checkbox" >
-  <span class="checkmark"></span>
-</label>
-<label class="formContainer">Min webshop
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="formContainer">Mit brand
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="formContainer">Min sikkerhed
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-               
-              
-  
-            
-                
-                <input id="sendForm" class="button" type="submit" value="Submit" />
-				  
-				<input id="overlayOff" class="button" type="button" value="Annuler"/>
- 
+            <label class="description" for="element_1">Navn </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <label class="description" for="element_2">Telefon </label>
+            <div>
+              <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p>Vedrørende</p>
+            <label class="formContainer">Min hjemmeside
+              <input type="checkbox" >
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min webshop
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Mit brand
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min sikkerhed
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <input id="sendForm" class="button" type="submit" value="Submit" />
+            <input id="overlayOff" class="button" type="button" value="Annuler"/>
           </form>
         </div>
       </div>
@@ -184,9 +170,9 @@
     </div>
   </div>
 </section>
-<section id="sikkerhed" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
+<section id="sikkerhed" class="page"> <img class="logo altLogo" src="images/logo_sikkerhed.png" alt="" >
   <div class="pageContainer">
-    <h1 class="white">Hvad kan vi gøre for dit brand ?</h1>
+    <h1 class="white">Hvad kan vi gøre for din sikkerhed ?</h1>
     <div class="innerProduct">
       <div class="productBox blue shadow"> <a class="productText" href="#">
         <h3>Netværk</h3>
@@ -200,7 +186,85 @@
     </div>
   </div>
 </section>
-<script>function logoSwitch () {
+<section id="sweetbot" class="page"> <!--<img class="logo altLogo" src="images/logo_sikkerhed.png" alt="" >-->
+  <div class="pageContainer">
+    <h1 class="white">Dine assistenter !</h1>
+    <div class="innerProfile">
+      <div class="productBox "> <a class="productText" href="#">
+        <h3>Marc</h3>
+        <p>CEO</p>
+        <img src="images/avatars-01.png"  alt=""/></a> <a class="productText" href="#">
+        <h3>Merete</h3>
+        <p>CEO</p>
+        <img src="images/avatars-02.png"  alt=""/></a> </div>
+      <div class="productBox3 "> <a class="productImage" href="#"> <img src="images/avatars-03.png"  alt=""/></a> <a class="productImage" href="#"> <img src="images/avatars-04.png"  alt=""/></a> <a class="productImage" href="#"> <img src="images/avatars-05.png"  alt=""/></a>
+        <h3>Ole</h3>
+        <h3>Camilla</h3>
+        <h3>Sif</h3>
+      </div>
+    </div>
+    <div class="innerProfile">
+      <div class="profile">
+        <h2>Hvad kan vi gør for dig ?</h2>
+        <p id="contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita placeat similique rerum quidem explicabo adipisci non laborum fugit, accusamus saepe. </p>
+      </div>
+    </div>
+	<div  class="innerProfile">
+      <div class="contact">
+        <div id="contactFormContainer">
+          <form method="post" action="pages/subpage.html">
+            <div class="form_description">
+              <a href="#contact"><h2>Kontakt sweetbot !</h2></a>
+              
+            </div>
+            <label class="description" for="navn">Navn </label>
+            <div>
+              <input id="navn" name="navn" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <label class="description" for="telefon">Telefon </label>
+            <div>
+              <input id="telefon" name="telefon" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+			<label class="description" for="email">Email </label>
+            <div>
+              <input id="email" name="email" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <!--<p>Vedrørende</p>
+            <label class="formContainer">Min hjemmeside
+              <input type="checkbox" >
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min webshop
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Mit brand
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min sikkerhed
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+			  <label class="description" for="besked">Besked </label>
+            <div>-->
+              <textarea id="besked" >Some text...</textarea>
+            </div>
+            <input id="sendContactForm" class="button" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+	  <div class="innerProfile address">
+      <div class="contact blue ">
+        <h2>SWEETBOT.DESIGN</h2> 
+		<p>Nørgaardsvej 30, <br>DK-2800 Kgs. Lyngby <br>
+Telefon: 36 15 45 04</p> 
+        </div>
+      </div>
+    </div>
+	
+    </div>
+  </div>
+  </div>
+  
+</section>
+<!--<script>function logoSwitch () {
         $('.altLogo').each(function() {
           $(this).css('top',
             $('.startLogo').offset().top -  $(this).closest('.page').offset().top
@@ -210,6 +274,6 @@
       
       $(document).scroll(function() {logoSwitch();});
       
-      logoSwitch();</script>
+      logoSwitch();</script>-->
 </body>
 </html>
