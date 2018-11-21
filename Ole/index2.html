@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SWEETBOT TEST</title>
+<script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            function logoSwitch () {
+                $('.altLogo').each(function() {
+                  $(this).css('top',
+                    $('.startLogo').offset().top -  $(this).closest('.page').offset().top
+                  );
+                });
+              };
+              
+              $(document).scroll(function() {logoSwitch();});
+              
+              logoSwitch();
+        
+            // MENU
+            
+                $(".burgerMenuBotton").click(function(){
+                    $(".burgerMenu").toggleClass("open");
+                    $(".burgerMenuBotton").toggleClass("toggle");
+                })
+            })
+            </script>
+    <style>
+    * {
+  padding: 0;
+  margin: 0;
+}                                              
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+  
+  font-family: 'lato', serif;
+  /* padding: 0 5px; */
+  background: rgba(116, 156, 211, 1);
+}
+.header {
+    position: fixed;
+    height: 72px;
+    min-width: 375px;
+    z-index: 100;
+    background: rgba(116, 156, 211, 1);
+}
+
+.menu-background {
+  height: 56.3333px;
+    position: relative;
+    top: 16px;
+    left: 260px;
+}
+
+/* MENU */
+
+.burgerMenu {
+	position: fixed;
+  top: 0;
+	margin-top: 16px;
+    padding-top: 8px;
+
+	right: -250px;
+	background: rgba(116, 156, 211, 0.80);
+	width: 250px;
+	height: 315px;
+	transition: .8s;
+	z-index: 120;
+}
+
+
+
+.open {
+	right: 0;
+}
+
+main {
+  padding-top: 100px;
+  background: rgba(116, 156, 211, 1);
+}
+
+ul {
+	margin-top: -5px;
+	padding-left: 0px;
+}
+
+ul li {
+	list-style: none;
+	font-size: 1.3em;
+	font-family: lato, arial, helvetica;
+}
+
+ul li a {
+	padding: 15px 20px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: #3D6BB4;
+	transition: 0.25s;
+}
+
+.burgerMenuBotton {
+	position: fixed;
+	top: 12px;
+	right: 5px;
+	width: 55px;
+	height: 65px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	z-index: 110;
+}
+
+.burgerMenuBotton span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 32px;
+	transition: .3s;
+}
+
+.burgerMenuBotton span:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFFF;
+	transition: .3s;
+}
+
+.burgerMenuBotton span:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFFF;
+	transition: .3s;
+}
+
+.burgerMenuBotton.toggle span {
+	background: transparent
+}
+
+.burgerMenuBotton.toggle span:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.burgerMenuBotton.toggle span:after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+/* MENU SLUT */
+.page {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  width: 260px;
+  top: 16px;
+  left: 0px;
+  z-index: 110;
+  /* transform: rotate(90deg);
+  transform-origin: left top 0; */
+}
+
+.startLogo {
+  position: fixed;
+}
+
+.altLogo {
+  position: absolute;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: #1d1d1d;
+}
+
+.shadow {
+  /* -webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); */
+/* -moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.75); */
+box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.40);
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="menu-background" src="images\menubar.png" alt="" >
+        <!-- <div class="menu-background"> -->
+        
+  
+    </div>
+    <!-- MENU START -->
+        <div class="burgerMenu shadow"><button	class="burgerMenuBotton">
+                <span></span>
+            </button>
+        
+            <ul>
+                <li><a href="#home">Forside</a></li>
+                <li><a href="#hjemmeside">Din hjemmeside</a></li>
+                <li><a href="#webshop">Din webshp</a></li>
+                <li><a href="#brand">Dit brand</a></li>
+                <li><a href="#vores">Vores Sweetbot</a></li>
+            </ul>
+            
+            
+        <a href="#hotbot"><div class="hotbot"></div></a>
+            
+    </div>
+    
+    
+    
+    
+    
+    <!-- MENU SLUT --> 
+    
+        <section id="home" class="page">
+            <img class="logo startLogo" src=".\images\logo.png " alt="" >
+                
+                  <main>
+                    <h1 class="white">KAN VI HJÆLPE DIG MED ?</h1> 
+
+                  </main> 
+        </section>
+                <section id="webshop" class="page">
+                <img class="logo altLogo" src="images\logo_hotbot.png" alt="" >
+                <!-- <h1 class="logo white altLogo">BLA</h1>  -->
+                </section>
+
+                <section id="hjemmeside" class="page">
+                        <img class="logo altLogo" src="images\logo_hjemmeside.png" alt="" >
+                        <!-- <h1 class="logo white altLogo">DET VIRKER</h1>  -->
+                        </section>
+               
+               
+
+<script>function logoSwitch () {
+        $('.altLogo').each(function() {
+          $(this).css('top',
+            $('.startLogo').offset().top -  $(this).closest('.page').offset().top
+          );
+        });
+      };
+      
+      $(document).scroll(function() {logoSwitch();});
+      
+      logoSwitch();</script>
+</body>
+</html>

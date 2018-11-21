@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Sweetbot</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+<!--<script type="text/javascript">
+        $(document).ready(function(){
+            function logoSwitch () {
+                $('.altLogo').each(function() {
+                  $(this).css('top',
+                    $('.startLogo').offset().top -  $(this).closest('.page').offset().top
+                  );
+                });
+              };
+              
+              $(document).scroll(function() {logoSwitch();});
+              
+              logoSwitch();
+        
+            // MENU
+            
+                $(".burgerMenuBotton").click(function(){
+                    $(".burgerMenu").toggleClass("open");
+                    $(".burgerMenuBotton").toggleClass("toggle");
+                })
+            })
+            </script>-->
+<link rel="stylesheet" href="styles/style.css">
+<!--<link rel="stylesheet" href="styles/call-me.css">
+-->
+</head>
+<body>
+<div class="header"> <img class="menu-background" src="images/menubar.png" alt="Baggrund til menu" > 
+  <!-- <div class="menu-background"> --> 
+  
+</div>
+<!-- MENU START -->
+<nav class="burgerMenu shadow">
+  <button	class="burgerMenuBotton"> <span></span> </button>
+  <ul>
+    <li><a class="burgerLink" href="#home">Forside</a></li>
+    <li><a class="burgerLink" href="#hjemmeside">Din hjemmeside</a></li>
+    <li><a class="burgerLink" href="#webshop">Din webshop</a></li>
+    <li><a class="burgerLink" href="#brand">Dit brand</a></li>
+    <li><a class="burgerLink" href="#sikkerhed">Din sikkerhed</a></li>
+    <li><a class="burgerLink" href="#sweetbot">Vores Sweetbot</a></li>
+  </ul>
+  <a href="#hotbot">
+  <div class="hotbot"></div>
+  </a> </nav>
+
+<!-- MENU SLUT -->
+
+<section id="home" class="page"> <a href="#home"><img class="logo startLogo" src="images/logo.png" alt="" ></a>
+  <div class="pageContainer">
+    <h1 class="white">KAN VI HJÆLPE DIG MED ?</h1>
+    <div class="innerHome">
+      <div class="homeProductLink orange shadow"> <a class="productNavLink" href="#hjemmeside">
+        <h2>Din <br>
+          hjemmeside</h2>
+        <img src="images/ikon_hjemmeside.png" alt=""/></a> </div>
+      <div class="homeProductLink green shadow">
+        <h2>Din <br>
+          webshop</h2>
+        <img src="images/ikon_webshop.png" alt=""/> </div>
+      <div class="homeProductLink grey shadow">
+        <h2>Dit <br>
+          brand</h2>
+        <img src="images/ikon_brand.png" alt=""/> </div>
+      <div class="homeProductLink black shadow">
+        <h2>Din <br>
+          sikkerhed</h2>
+        <img src="images/ikon_sikkerhed.png" alt=""/> </div>
+      <div class="overlay">
+        <div id="form_container">
+          <form method="post" action="pages/subpage.html">
+            <div class="form_description">
+              <h2>Kontakt mig</h2>
+              <p>Send os navn og nummer, <br>
+                Så giver dig et kald.</p>
+            </div>
+            <label class="description" for="element_1">Navn </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <label class="description" for="element_2">Telefon </label>
+            <div>
+              <input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p>Vedrørende</p>
+            <label class="formContainer">Min hjemmeside
+              <input type="checkbox" >
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min webshop
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Mit brand
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min sikkerhed
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <input id="sendForm" class="button" type="submit" value="Submit" />
+            <input id="overlayOff" class="button" type="button" value="Annuler"/>
+          </form>
+        </div>
+      </div>
+      <div id="callMe" class="homeNavLink orange shadow"> <img src="images/ikon_opringning.png" alt=""/>
+        <h2>En opringning</h2>
+      </div>
+      <div class="homeNavLink blue shadow"> <a class="navLink" href="#hjemmeside"> <img src="images/ikon_sweetbot.png" alt=""/>
+        <h2>Vores sweetbot</h2>
+        </a> </div>
+    </div>
+  </div>
+</section>
+<section id="hjemmeside" class="page"> <a href="#home"><img class="logo altLogo" src="images/logo_hjemmeside.png" alt="" ></a>
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for din hjemmeside ?</h1>
+    <div class="innerCategory">
+      <div class="categoryBox blue shadow"> <a class="            " href="#">
+        <h3></h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox orange shadow"> <a class="            " href="#">
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox green shadow"> <a class="            " href="#">
+        <h3></h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
+<section id="webshop" class="page"> <img class="logo altLogo" src="images/logo_hotbot.png" alt="" >
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for din foretning ?</h1>
+    <div class="innerCategory">
+      <div class="categoryBox green shadow"> <a class="            " href="#">
+        <h3>Hotbot</h3>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox blue shadow"> <a class="            " href="#">
+        <h3>Katalog</h3>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox orange shadow"> <a class="            " href="#">
+        <h3>Betalingsløsning</h3>
+        <p>Lorem ipsum dolor sit amet </p>
+        <span>consectetur</span> </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
+<section id="brand" class="page"> <img class="logo altLogo" src="images/logo_brand.png" alt="" >
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for dit brand ?</h1>
+    <div class="innerCategory">
+      <div class="categoryBox orange shadow"> <a class="            " href="#">
+        <h3>Logo Design</h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox green shadow"> <a class="            " href="#">
+        <h3>Visuel Identitet</h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox blue shadow"> <a class="categoryText" href="#">
+        <h3>MARKEDSFØRING</h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
+<section id="sikkerhed" class="page"> <img class="logo altLogo" src="images/logo_sikkerhed.png" alt="" >
+  <div class="pageContainer">
+    <h1 class="white">Hvad kan vi gøre for din sikkerhed ?</h1>
+    <div class="innerCategory">
+      <div class="categoryBox blue shadow"> <a class="            " href="#">
+        <h3>Netværk</h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox orange shadow"> <a class="            " href="#">
+        <h3>Data</h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+      <div class="categoryBox green shadow"> <a class="            " href="#">
+        <h3>Rådgivning</h3>
+        </a> <a class="categoryImage" href="#"> <img src="images/betaling.jpg"  alt=""/></a> </div>
+    </div>
+  </div>
+</section>
+<section id="sweetbot" class="page"> <!--<img class="logo altLogo" src="images/logo_sikkerhed.png" alt="" >-->
+  <div class="pageContainer">
+    <h1 class="white">Dine assistenter !</h1>
+    <div class="innerProfile">
+      <div class="categoryBox "> <a class="            " href="#">
+        <h3>Marc</h3>
+        <p>CEO</p>
+        <img src="images/avatars-01.png"  alt=""/></a> <a class="            " href="#">
+        <h3>Merete</h3>
+        <p>CEO</p>
+        <img src="images/avatars-02.png"  alt=""/></a> </div>
+      <div class="categoryBox3 "> <a class="categoryImage" href="#"> <img src="images/avatars-03.png"  alt=""/></a> <a class="categoryImage" href="#"> <img src="images/avatars-04.png"  alt=""/></a> <a class="categoryImage" href="#"> <img src="images/avatars-05.png"  alt=""/></a>
+        <h3>Ole</h3>
+        <h3>Camilla</h3>
+        <h3>Sif</h3>
+      </div>
+    </div>
+    <div class="innerProfile">
+      <div class="profile">
+        <h2>Hvad kan vi gør for dig ?</h2>
+        <p id="contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita placeat similique rerum quidem explicabo adipisci non laborum fugit, accusamus saepe. </p>
+      </div>
+    </div>
+	<div  class="innerProfile">
+      <div class="contact">
+        <div id="contactFormContainer">
+          <form method="post" action="pages/subpage.html">
+            <div class="form_description">
+              <a href="#contact"><h2>Kontakt sweetbot !</h2></a>
+              
+            </div>
+            <label class="description" for="navn">Navn </label>
+            <div>
+              <input id="navn" name="navn" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <label class="description" for="telefon">Telefon </label>
+            <div>
+              <input id="telefon" name="telefon" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+			<label class="description" for="email">Email </label>
+            <div>
+              <input id="email" name="email" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <!--<p>Vedrørende</p>
+            <label class="formContainer">Min hjemmeside
+              <input type="checkbox" >
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min webshop
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Mit brand
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+            <label class="formContainer">Min sikkerhed
+              <input type="checkbox">
+              <span class="checkmark"></span> </label>
+			  <label class="description" for="besked">Besked </label>
+            <div>-->
+              <textarea id="besked" >Some text...</textarea>
+            </div>
+            <input id="sendContactForm" class="button" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+	  <div class="innerProfile address">
+      <div class="contact blue ">
+        <h2>SWEETBOT.DESIGN</h2> 
+		<p>Nørgaardsvej 30, <br>DK-2800 Kgs. Lyngby <br>
+Telefon: 36 15 45 04</p> 
+        </div>
+      </div>
+    </div>
+	
+    </div>
+  </div>
+  </div>
+  
+</section>
+<!--<script>function logoSwitch () {
+        $('.altLogo').each(function() {
+          $(this).css('top',
+            $('.startLogo').offset().top -  $(this).closest('.page').offset().top
+          );
+        });
+      };
+      
+      $(document).scroll(function() {logoSwitch();});
+      
+      logoSwitch();</script>-->
+</body>
+</html>
