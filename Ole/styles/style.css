@@ -44,7 +44,14 @@ p {
 	margin: 8px 0;
 	text-align: left;
 	font-weight: 400;
-	font-size: 1em;}
+	font-size: 1em;
+}
+
+.hideOnMobile {
+	display: none;
+}
+
+/* HEADER */
 
 .header {
 	position: fixed;
@@ -259,6 +266,11 @@ ul li a:hover {
 	margin-right: auto;
 	display: block;
 	height: 40vw;
+}
+
+.categoryBox img:hover, .categoryBox img:focus {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
 }
 
 .avetarsBox3 {
@@ -559,7 +571,7 @@ p {
 .innerHome {
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-template-rows: 25vw 12vw 12vw auto;
+    grid-template-rows: 25vw 12vw auto;
 }	
 .homeProductLink {
     height: 25vw;
@@ -595,7 +607,10 @@ p {
 .categoryText span {
 	font-size: 1.4em;
 }
-	
+.categoryImage > img {
+    max-width: 100%;
+	height: auto;
+}	
 a.categoryImage > img {
     height: 30vw;
 	justify-self: end;
@@ -621,7 +636,11 @@ a.categoryImage > img {
 	
 .form_description h2, .innerProfile h2, .innerProduct h2 {
     font-size: 1.8em;
-	margin: 0.7em 0;
+	margin: 1em 0 0.5em;
+}
+	
+.hideOnMobile {
+	display: block;
 }
 	
 }
